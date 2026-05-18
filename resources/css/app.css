@@ -1,0 +1,204 @@
+* {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+table {
+    text-align: center;
+    height: 100px;
+    width: auto;
+    color: white;
+}
+table th,td{
+    padding:2px;
+}
+table th {
+    font-size: 15px;
+    text-transform: lowercase;
+}
+
+table th::first-letter {
+    text-transform: uppercase;
+}
+
+table tbody tr:nth-child(odd){
+    border-radius: 5px;
+    background-color: rgb(38, 58, 109);
+;}
+
+
+
+
+
+table .create a {
+    text-decoration: none;
+}
+
+
+
+#detailIcon,
+#editIcon,
+#addIcon,
+#deleteIcon,
+#filterIcon {
+    width: 25px;
+    height: auto;
+    cursor: pointer;
+    transition-duration: .8s;
+    transform: rotate(0deg);
+}
+#detailIcon:hover,
+#editIcon:hover,
+#addIcon:hover,
+#deleteIcon:hover,
+#filterIcon:hover{
+    transition-duration: .5s;
+    transition-timing-function: ease-in-out;
+    transform: rotate(-20deg);
+}
+
+
+table button {
+    background-color: transparent;
+    border: none;
+}
+
+main {
+    font-size: 15px;
+    display: flex;
+    justify-content: center;
+    background-color: rgb(33, 49, 89);
+    height: 100vh;
+}
+
+
+
+
+
+.pagination a {
+    color: white;
+}
+
+.pagination li {
+    display: inline-block;
+}
+
+.pagination a {
+    width: 10px;
+    height: 100px;
+}
+
+
+
+
+header {
+    align-items: center;
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    background-color: rgb(33, 49, 89);
+    border-bottom: .5px solid rgb(149, 145, 145);
+}
+
+header .logo {
+    color: white;
+    padding: 10px 10px 20px 30px;
+}
+
+
+.nav ul {
+    display: flex;
+}
+
+.nav ul li {
+    margin: 0 0 10px 10px;
+    padding: 6px;
+    border-radius: 3px;
+    box-shadow: 2px 2px 7px rgb(16, 26, 53);
+    color: white;
+    list-style: none;
+    padding-left: 10px;
+}
+
+.nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+
+
+.create h5 {
+    text-transform: uppercase;
+    color: rgb(242, 59, 59);
+    border-radius: 4px;
+    padding: 12px;
+    box-shadow: 2px 2px 7px rgb(22, 28, 43);
+    overflow: hidden;
+    white-space: nowrap;
+    margin: 0 auto;
+    letter-spacing: .10em;
+    animation-name: ecrire;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-duration: 3s;
+}
+
+@keyframes ecrire {
+    0% {
+        width: 100%
+    }
+
+    50% {
+        width: 93%
+    }
+
+    100% {
+        width: 100%
+    }
+}
+
+
+table td input {
+    text-align: center;
+    border-radius: 3px;
+    padding: 6px;
+    color: white;
+    background-color: rgb(70, 92, 120);
+    border: none;
+    outline: none;
+    width: 11em;
+    margin-bottom: 10px;
+}
+table td input[type="submit"] {
+    background-color: rgb(220, 40, 40);
+    width: 100%;
+    transition-duration: .5s;
+    cursor: pointer;
+}
+table td input[type="submit"]:hover{
+    transition-timing-function: ease-in-out;
+    background-color: rgb(156, 24, 24);
+    transition-duration: .5s;
+}
+.actions {
+    justify-content: center;
+    display: flex;
+    padding: 4px;
+}
+tbody tr select{
+    background-color: transparent;
+    width: 100%;
+    padding: 0px 5px;
+    height: 100%;
+    border: none;
+    color: white;
+    
+}
+input.no-spinner::-webkit-inner-spin-button,
+input.no-spinner::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+}
